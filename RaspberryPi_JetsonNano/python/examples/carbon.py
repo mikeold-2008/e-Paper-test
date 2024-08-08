@@ -46,12 +46,14 @@ try:
         image = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame    
         draw = ImageDraw.Draw(image)
 
-        num=0
-        while(True):
-            draw.text((120, 60), str({carbon_intensity}), font = font15, fill = 0)
-            num=num+1
-            if(num==15):
-                break
+        # num=0
+        # while(True):
+        draw.text((120, 60), str({carbon_intensity}), font = font15, fill = 0)
+        epd.display(epd.getbuffer(image))
+        time.sleep(2)
+            # num=num+1
+            # if(num==15):
+            #     break
 
 
         logging.info("Clear...")
