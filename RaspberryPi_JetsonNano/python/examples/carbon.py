@@ -41,16 +41,16 @@ try:
         epd.init()
         epd.Clear(0xFF)
 
-        font15 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 15)
+        font15 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 25)
 
         image = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame    
         draw = ImageDraw.Draw(image)
 
         # num=0
         # while(True):
-        draw.text((120, 60), str({carbon_intensity}), font = font15, fill = 0)
+        draw.text((120, 60), str(carbon_intensity), font = font15, fill = 0)
         epd.display(epd.getbuffer(image))
-        time.sleep(2)
+        time.sleep(5)
             # num=num+1
             # if(num==15):
             #     break
