@@ -48,7 +48,7 @@ try:
 
         num=0
         while(True):
-            draw.text((120, 60), {carbon_intensity}, font = font15, fill = 0)
+            draw.text((120, 60), str({carbon_intensity}), font = font15, fill = 0)
             num=num+1
             if(num==15):
                 break
