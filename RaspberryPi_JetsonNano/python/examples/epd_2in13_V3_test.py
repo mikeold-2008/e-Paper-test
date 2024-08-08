@@ -52,6 +52,12 @@ try:
     image = Image.open(os.path.join(picdir, '2in13.bmp'))
     epd.display(epd.getbuffer(image))
     time.sleep(2)
+
+    # read bmp file - mine / new low carbon 
+    logging.info("2.5 read bmp file...")
+    image = Image.open(os.path.join(picdir, 'low_carbon.bmp'))
+    epd.display(epd.getbuffer(image))
+    time.sleep(2)
     
     # read bmp file on window
     logging.info("3.read bmp file on window...")
