@@ -2,7 +2,7 @@ import time
 import requests
 from datetime import datetime, timedelta
 from PIL import Image, ImageDraw, ImageFont
-from waveshare_epd import epd2in13_V2
+from waveshare_epd import epd2in13_V3
 
 # Constants
 API_URL = "https://api.carbonintensity.org.uk/intensity"
