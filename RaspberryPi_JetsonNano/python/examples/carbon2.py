@@ -12,7 +12,7 @@ FONT_PATH = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 
 # Initialize e-ink display
 epd = epd2in13_V3.EPD()
-epd.init(epd.FULL_UPDATE)
+epd.init()
 epd.Clear(0xFF)
 
 # Utility functions
@@ -86,3 +86,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
