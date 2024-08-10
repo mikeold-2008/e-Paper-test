@@ -11,7 +11,7 @@ REFRESH_INTERVAL = 1800  # 30 minutes in seconds
 FONT_PATH = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 
 # Initialize e-ink display
-epd = epd2in13_V2.EPD()
+epd = epd2in13_V3.EPD()
 epd.init(epd.FULL_UPDATE)
 epd.Clear(0xFF)
 
